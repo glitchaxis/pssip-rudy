@@ -1,0 +1,95 @@
+body {
+    background: linear-gradient(180deg, #000000 0%, #6c0101 100%);
+    background-attachment: fixed;
+    color: #e0e0e0;
+    padding: 20px;
+}
+
+.main { 
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+p {
+        font-family: 'Bahnschrift';
+    font-size: 1.1rem; 
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+strong {
+    color: #ffd700;
+    text-transform: uppercase; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 20px 0;
+    font-family: 'Bahnschrift';
+    background-color: rgba(40, 0, 0, 0.6);
+}
+    th {
+        background-color: #8b0000;
+        color: burlywood;
+        padding: 15px;
+        border: 1px solid #444;
+    }
+
+    td {
+        padding: 12px;
+        border: 1px solid #444;
+        line-height: 1.4;
+    }
+
+ul {
+    font-family: 'Bahnschrift';
+}
+
+fieldset {
+    border: 2px solid #8b0000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend {
+    color: #ffd700;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+input {
+    background-color: #683636;
+    border: 1px solid #8b0000;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    width: 80%
+}
+
+a[href="Thanks.html"] {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a[href="Thanks.html"]:hover {
+    box-shadow: 0 0 15px #ff0000;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;           
+    gap: 20px;         
+}
+.poster {
+    width: 500px;                
+    border-radius: 10px;    
+}
+.form-inputs {
+    flex: 1; 
+}
