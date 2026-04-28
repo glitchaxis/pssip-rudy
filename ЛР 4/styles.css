@@ -76,8 +76,9 @@ a[href="Thanks.html"] {
     text-decoration: none;
     border-radius: 5px;
 }
+Добавить Анимации, тень, доработвать формы
 a[href="Thanks.html"]:hover {
-    box-shadow: 0 0 15px #ff0000;
+    box-shadow: 0 0 15px #ff0000
 }
 
 .form {
@@ -92,4 +93,23 @@ a[href="Thanks.html"]:hover {
 }
 .form-inputs {
     flex: 1; 
+}
+select {
+    background-color: #683636; 
+    border: 1px solid #8b0000;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    width: 90%;
+    cursor: pointer;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+label {
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 0.9rem;
 }
