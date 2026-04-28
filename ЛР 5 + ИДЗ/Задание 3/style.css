@@ -1,0 +1,125 @@
+:root {
+    --sakura-pink: #ffb7c5;
+    --cherry-red: #c45d6d;
+    --leaf-green: #d1e2a5;
+    --wiki-bg: #444444;
+    --wiki-border: #ffffff;
+}
+
+body { 
+    background-color: var(--wiki-bg);
+    color: rgb(255, 255, 255);
+}
+
+.wiki-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    column-gap: 30px;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.wiki-main {
+    flex: 3 1 500px;
+    order: 1;
+}
+
+.wiki-infobox {
+    flex: 1 1 300px;
+    order: 2;
+    align-self: flex-start;
+    border: 1px solid var(--wiki-border);
+    border-top: 5px solid var(--cherry-red); 
+    padding: 10px;
+    border-radius: 16px; 
+    transition: transform 0.3s ease;
+}
+
+.wiki-infobox:hover {
+    transform: translateY(-5px);
+}
+
+.wiki-header h1 {
+    font-family: 'Linux Libertine', Georgia, serif;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: var(--cherry-red);
+}
+
+.showcase-images img {
+    max-width: 75%;
+    display: block;
+    margin: 10px 0;
+}
+
+.wiki-section h2 {
+    color: var(--sakura-pink);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    border-bottom: 1px solid var(--wiki-border);
+}
+
+.infobox-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;     
+    margin: 0 auto;     
+}
+
+.infobox-title {
+    background-color: var(--sakura-pink);
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    color: var(--cherry-red);
+    border-radius: 8px 8px 0 0;
+}
+
+.infobox-table {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.infobox-table th {
+    text-align: right;
+    padding-right: 10px;
+    width: 45%; 
+    font-weight: normal;
+    color: var(--sakura-pink);
+}
+
+.infobox-table td { 
+    text-align: left;
+    padding-left: 0;
+}
+
+.type-icon {
+    width: 20px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.lightcone {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    filter: drop-shadow(0 0 5px var(--sakura-pink));
+}
+
+p {
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--wiki-border), transparent);
+    margin: 20px 0;
+}
